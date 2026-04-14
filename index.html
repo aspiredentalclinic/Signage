@@ -22,7 +22,10 @@
             .then(videos => {
                 function play() {
                     player.src = videos[index];
-                    player.play();
+                    player.play().catch(() => {
+                        player.muted = true;
+                        player.play();
+                    });
                 }
                 player.addEventListener('ended', () => {
                     index = (index + 1) % videos.length;
