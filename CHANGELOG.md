@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.0] - 2025-07-14
+### Changed
+- Replaced video player with fullscreen image slideshow
+- `index.html` now loads from `images.json` instead of `videos.json`
+- Each image displays for 60 seconds before advancing
+
+### Added
+- `images.json` — playlist file for managing slideshow images
+- `home.html` — fullscreen iframe wrapper pointing to GitHub Pages
+
+### Removed
+- Video playback functionality
+- `videos.json` (superseded by `images.json`)
+
 ## [1.1.0] - 2025-07-14
 ### Added
 - `videos.json` playlist file — manage videos without editing `index.html`
@@ -11,7 +25,6 @@
 
 ### Notes
 - Deployed via AbleSign; audio plays automatically without user interaction required
-- To add videos: upload `.mp4` to repo and add URL to `videos.json`
 
 ## [1.0.0] - Initial Release
 ### Added
