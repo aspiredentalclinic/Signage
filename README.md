@@ -12,8 +12,10 @@ Edit `images.json` only — no changes to `index.html` needed.
 
 ```json
 [
-  "https://aspiredentalclinic.github.io/Signage/image1.jpg",
-  "https://aspiredentalclinic.github.io/Signage/image2.jpg"
+  "https://aspiredentalclinic.github.io/Signage/assets/img/ORTHO.png",
+  "https://aspiredentalclinic.github.io/Signage/assets/img/2.png",
+  "https://aspiredentalclinic.github.io/Signage/assets/img/3.png",
+  "https://aspiredentalclinic.github.io/Signage/assets/img/Aspire Ad signage (297 x 210 mm).png"
 ]
 ```
 
@@ -28,3 +30,5 @@ Edit `images.json` only — no changes to `index.html` needed.
 | `index.html` | Signage player — do not edit for playlist changes |
 | `images.json` | Playlist — add/remove image URLs here |
 | `home.html` | Fullscreen iframe wrapper pointing to GitHub Pages |
+| `assets/img/` | Image files served via GitHub Pages |
+| `update_images.py` | Script to auto-regenerate `images.json` from `assets/img/` |

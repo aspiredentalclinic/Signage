@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0] - 2026-04-15
+### Changed
+- Renamed `assets/img/1.png` to `ORTHO.png` for clarity
+- Updated `images.json` to reflect current image playlist
+
+### Removed
+- `assets/img/OrthodonticsCare3.png`
+
 ## [2.0.0] - 2025-07-14
 ### Changed
 - Replaced video player with fullscreen image slideshow
