@@ -10,22 +10,25 @@
     </style>
 </head>
 <body>
-    <video id="player" autoplay></video>
+    <video id="player" autoplay muted playsinline></video>
     <script>
         const player = document.getElementById('player');
         let index = 0;
 
         fetch('videos.json')
             .then(r => r.json())
-            .then(videos => {
+            .then(async (videos) => {
                 if (videos && videos.length > 0) {
-                    player.src = videos[index];
                     player.addEventListener('ended', () => {
                         index = (index + 1) % videos.length;
                         player.src = videos[index];
                         // Explicitly calling play() is more robust across browsers
                         player.play().catch(error => console.error("Playback failed:", error));
                     });
+
+                    // Set initial video and start playback programmatically
+                    player.src = videos[index];
+                    await player.play().catch(error => console.error("Initial playback failed:", error));
                 } else {
                     console.error("No videos found in videos.json");
                 }
