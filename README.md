@@ -4,18 +4,15 @@ Digital signage display for Aspire Dental Clinic, served via GitHub Pages and di
 
 ## How It Works
 
-The player loads `images.json` and displays each image fullscreen for 60 seconds, looping back to the start indefinitely.
+The player loads `videos.json` and displays each video fullscreen, looping back to the start indefinitely.
 
-## Adding / Removing Images
+## Adding / Removing Videos
 
-Edit `images.json` only — no changes to `index.html` needed.
+Edit `videos.json` only — no changes to `index.html` needed.
 
 ```json
 [
-  "https://aspiredentalclinic.github.io/Signage/assets/img/ORTHO.png",
-  "https://aspiredentalclinic.github.io/Signage/assets/img/2.png",
-  "https://aspiredentalclinic.github.io/Signage/assets/img/3.png",
-  "https://aspiredentalclinic.github.io/Signage/assets/img/Aspire Ad signage (297 x 210 mm).png"
+  "https://aspiredentalclinic.github.io/Signage/gumsGuide.mp4"
 ]
 ```
 
